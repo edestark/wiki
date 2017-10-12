@@ -11,9 +11,9 @@ BLACK='\E[0;30m'   # PRETO
 BOLD='\033[37;4;1m' # NEGRITO
 UND='\033[37;4m' # SUBLINHADO
 RED='\033[00;31m' # VERMELHO
-GREEN='\033[00;32m' # VERDE
-YELLOW='\033[00;33m' # AMARELO
-BLUE='\033[00;34m' # AZUL
+GREEN='\033[01;32m' # VERDE
+YELLOW='\033[01;33m' # AMARELO
+BLUE='\033[01;34m' # AZUL
 PURPLE='\033[00;35m' # ROXO
 CYAN='\033[00;36m' # CIANO
 LIGHTGRAY='\033[00;37m' # CINZA CLARO
@@ -32,7 +32,7 @@ cab() {
 clear
 printf "##############################################
                    ${LCYAN}WEBHOSTING${RESE}
-      ${LYELLOW}COMMAND ${LBLUE}LINE ${LYELLOW}INTERFACE ${LBLUE}WIKI (HGBR)${RESE}
+      ${LYELLOW}COMMAND ${LBLUE}LINE ${LYELLOW}INTERFACE ${LBLUE}WIKI ${GREEN}(H${YELLOW}G${BLUE}B${WHITE}R)${RESE}
 ##############################################\n"
 }
 #
