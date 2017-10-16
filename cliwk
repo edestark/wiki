@@ -7,6 +7,7 @@
 #
 #
 ## BASHCSS
+trap 'menu'  1 2 3 15 20
 BLACK='\E[0;30m'   # PRETO
 BOLD='\033[37;4;1m' # NEGRITO
 UND='\033[37;4m' # SUBLINHADO
@@ -35,5 +36,27 @@ printf "##############################################
       ${LYELLOW}COMMAND ${LBLUE}LINE ${LYELLOW}INTERFACE ${LBLUE}WIKI ${GREEN}(H${YELLOW}G${BLUE}B${WHITE}R)${RESE}
 ##############################################\n"
 }
-#
+menu() {
 cab
+printf "[ 1 ] E-mail            [ 2 ] DNS               [ 3 ] cPanel            
+[ 4 ] Shell             [ 5 ] TOS               [ 6 ] Outro - Pesquisar\n"
+read -n 1 -p "Opcao: <Enter=Retorna>" opc
+[ "x$opc" == "x" ] && clear && echo -e "\nWiki finalizada, valor inválido\n" && exit 1
+case $opc in
+        1) echo -e "\nBotão 1 apertado"
+           ;;
+        2) echo -e "\nBotão 2 Apertado"
+           ;;
+        3) echo -e "\nBotão 3 Apertado"
+           ;;
+        4) echo -e "\nBotão 4 Apertado"
+           ;;
+        5) echo -e "\nBotão 5 Apertado"
+           ;;
+        6) echo -e "\nBotão 6 Apertado"
+           ;;
+esac
+}
+# Chamar Menu
+menu
+
