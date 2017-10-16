@@ -40,7 +40,7 @@ menu() {
 cab
 printf "[ 1 ] E-mail            [ 2 ] DNS               [ 3 ] cPanel            
 [ 4 ] Shell             [ 5 ] TOS               [ 6 ] Outro - Pesquisar\n"
-read -n 1 -p "Opcao: <Enter=Retorna>" opc
+read -n 1 -p "Opcao: <Enter=Sair>" opc
 [ "x$opc" == "x" ] && clear && echo -e "\nWiki finalizada, valor inválido\n" && exit 1
 case $opc in
         1) echo -e "\nBotão 1 apertado"
